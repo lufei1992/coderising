@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="algorithms" />
+        <module name="coreJava" />
+        <module name="effectiveJava" />
+        <module name="headFirst" />
+        <module name="javaConcurrencyInPractice" />
+        <module name="javaPerformance" />
+        <module name="miniJvm" />
+        <module name="miniSpring" />
+        <module name="oop" />
+        <module name="proficientIn4XSpring" />
+        <module name="springBootInAction" />
+        <module name="springInAction" />
+        <module name="thinkingInJava" />
+        <module name="understandingTheJVM" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="algorithms" target="1.5" />
+      <module name="coreJava" target="1.5" />
+      <module name="effectiveJava" target="1.5" />
+      <module name="headFirst" target="1.5" />
+      <module name="javaConcurrencyInPractice" target="1.5" />
+      <module name="javaPerformance" target="1.5" />
+      <module name="miniJvm" target="1.5" />
+      <module name="miniSpring" target="1.5" />
+      <module name="oop" target="1.5" />
+      <module name="parent" target="1.5" />
+      <module name="proficientIn4XSpring" target="1.5" />
+      <module name="springBootInAction" target="1.5" />
+      <module name="springInAction" target="1.5" />
+      <module name="thinkingInJava" target="1.5" />
+      <module name="understandingTheJVM" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

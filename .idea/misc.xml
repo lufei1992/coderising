@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/parent/pom.xml" />
+        <option value="$PROJECT_DIR$/algorithms/pom.xml" />
+        <option value="$PROJECT_DIR$/coreJava/pom.xml" />
+        <option value="$PROJECT_DIR$/effectiveJava/pom.xml" />
+        <option value="$PROJECT_DIR$/headFirst/pom.xml" />
+        <option value="$PROJECT_DIR$/javaConcurrencyInPractice/pom.xml" />
+        <option value="$PROJECT_DIR$/javaPerformance/pom.xml" />
+        <option value="$PROJECT_DIR$/miniJvm/pom.xml" />
+        <option value="$PROJECT_DIR$/miniSpring/pom.xml" />
+        <option value="$PROJECT_DIR$/oop/pom.xml" />
+        <option value="$PROJECT_DIR$/proficientIn4XSpring/pom.xml" />
+        <option value="$PROJECT_DIR$/springBootInAction/pom.xml" />
+        <option value="$PROJECT_DIR$/springInAction/pom.xml" />
+        <option value="$PROJECT_DIR$/thinkingInJava/pom.xml" />
+        <option value="$PROJECT_DIR$/understandingTheJVM/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_10" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>
