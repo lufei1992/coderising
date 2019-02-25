@@ -1,4 +1,4 @@
-package c1_Fundamentals.s1;
+package algorithm.c1_Fundamentals.s1;
 
 public class Demo01 {
     /**
