@@ -1,4 +1,4 @@
-package java36.c1.s5;
+package java36.c1.s05;
 
 public class Demo01 {
     public static void main(String[] args) {
