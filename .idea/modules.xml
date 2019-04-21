@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/algorithms/algorithms.iml" filepath="$PROJECT_DIR$/algorithms/algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/coderising.iml" filepath="$PROJECT_DIR$/.idea/coderising.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coreJava/coreJava.iml" filepath="$PROJECT_DIR$/coreJava/coreJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/effectiveJava/effectiveJava.iml" filepath="$PROJECT_DIR$/effectiveJava/effectiveJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/headFirst/headFirst.iml" filepath="$PROJECT_DIR$/headFirst/headFirst.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaConcurrencyInPractice/javaConcurrencyInPractice.iml" filepath="$PROJECT_DIR$/javaConcurrencyInPractice/javaConcurrencyInPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaNetwork/javaNetwork.iml" filepath="$PROJECT_DIR$/javaNetwork/javaNetwork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaPerformance/javaPerformance.iml" filepath="$PROJECT_DIR$/javaPerformance/javaPerformance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miniJvm/miniJvm.iml" filepath="$PROJECT_DIR$/miniJvm/miniJvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/miniSpring/miniSpring.iml" filepath="$PROJECT_DIR$/miniSpring/miniSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop/oop.iml" filepath="$PROJECT_DIR$/oop/oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/proficientIn4XSpring/proficientIn4XSpring.iml" filepath="$PROJECT_DIR$/proficientIn4XSpring/proficientIn4XSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rookie/rookie.iml" filepath="$PROJECT_DIR$/rookie/rookie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springBootInAction/springBootInAction.iml" filepath="$PROJECT_DIR$/springBootInAction/springBootInAction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springInAction/springInAction.iml" filepath="$PROJECT_DIR$/springInAction/springInAction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thinkingInJava/thinkingInJava.iml" filepath="$PROJECT_DIR$/thinkingInJava/thinkingInJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/understandingTheJVM/understandingTheJVM.iml" filepath="$PROJECT_DIR$/understandingTheJVM/understandingTheJVM.iml" />
+    </modules>
+  </component>
+</project>
