@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/aop
+      http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="knight" class="chapter_01.knight.sia.BraveKnight">
+        <constructor-arg ref="quest"/>
+    </bean>
+
+    <bean id="quest" class="chapter_01.knight.sia.SlayDragonQuest">
+        <constructor-arg value="#{T(System).out}"/>
+    </bean>
+
+    <bean id="minstrel" class="chapter_01.knight.sia.Minstrel">
+        <constructor-arg value="#{T(System).out}"/>        <!-- 声明  Minstrel bean-->
+    </bean>
+
+    <aop:config>
+        <aop:aspect ref="minstrel">
+            <aop:pointcut id="embark"
+                          expression="execution(* *.embarkOnQuest(..))"/>   <!-- 定义切点 -->
+
+            <aop:before pointcut-ref="embark"
+                        method="singBeforeQuest"/>                        <!-- 声明前置通知 -->
+
+            <aop:after pointcut-ref="embark"
+                       method="singAfterQuest"/>                            <!-- 声明后置通过 -->
+        </aop:aspect>
+    </aop:config>
+
+    <aop:config>
+        <aop:aspect ref="audience">
+            <aop:before
+                    pointcut="execution(* concert.Performance.perform(...))"
+                    method="silenceCellPhone"/>
+            <aop:before
+                    pointcut="execution(* concert.Performance.perform(...))"
+                    method="takeSeats"/>
+            <aop:after-returning
+                    pointcut="execution(* concert.Performance.perform(...))"
+                    method="applause"/>
+            <aop:after-throwing
+                    pointcut="execution(* concert.Performance.perform(...))"
+                    method="demandRefund"/>
+        </aop:aspect>
+    </aop:config>
+
+    <aop:config>
+        <aop:aspect ref="audience">
+            <aop:pointcut
+                    expression="execution(* concert.Performance.perform(...))"
+                    id="performance"/>
+            <aop:before
+                    pointcut-ref="performance"
+                    method="silenceCellPhone"/>
+            <aop:before
+                    pointcut-ref="performance"
+                    method="takeSeats"/>
+            <aop:after-returning
+                    pointcut-ref="performance"
+                    method="applause"/>
+            <aop:after-throwing
+                    pointcut-ref="performance"
+                    method="demandRefund"/>
+        </aop:aspect>
+    </aop:config>
+
+    <!--<aop:config>-->
+        <!--<aop:aspect ref="audience">-->
+            <!--<aop:pointcut-->
+                    <!--expression="execution(* concert.Performance.perform(...))"-->
+                    <!--id="performance"/>-->
+            <!--<aop:around-->
+                    <!--pointcut-ref="performance"-->
+                    <!--method="watchPerformance"/>-->
+        <!--</aop:aspect>-->
+    <!--</aop:config>-->
+
+    <bean id="trackCounter"
+          class="concert.TrackCounter"/>
+
+    <aop:config>
+        <!-- 将TrackCounter声明为切面 -->
+        <aop:aspect ref="trackCounter">
+            <aop:pointcut
+                    expression="execution(* soundsystem.CompactDisc.playTrack(int))
+  		and args(trackNumber)"
+                    id="trackPlayed"/>
+            <aop:before
+                    pointcut-ref="trackPlayed"
+                    method="countTrack"/>
+        </aop:aspect>
+    </aop:config>
+
+
+</beans>
